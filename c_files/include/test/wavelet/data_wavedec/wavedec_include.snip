@@ -1,0 +1,61 @@
+
+NUMTYPE x1_c_vector[] = {
+                             #include "test/wavelet/data_wavedec/1_c_vector.csv"
+                           };
+        unsigned int len_x1_c_vector = sizeof(x1_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x1_l_vector[] = {
+                             #include "test/wavelet/data_wavedec/1_l_vector.csv"
+                           };
+        unsigned int len_x1_l_vector = sizeof(x1_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x1_signal[] = {
+                             #include "test/wavelet/data_wavedec/1_signal.csv"
+                           };
+        unsigned int len_x1_signal = sizeof(x1_signal) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_c_vector[] = {
+                             #include "test/wavelet/data_wavedec/2_c_vector.csv"
+                           };
+        unsigned int len_x2_c_vector = sizeof(x2_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_l_vector[] = {
+                             #include "test/wavelet/data_wavedec/2_l_vector.csv"
+                           };
+        unsigned int len_x2_l_vector = sizeof(x2_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_signal[] = {
+                             #include "test/wavelet/data_wavedec/2_signal.csv"
+                           };
+        unsigned int len_x2_signal = sizeof(x2_signal) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_c_vector[] = {
+                             #include "test/wavelet/data_wavedec/3_c_vector.csv"
+                           };
+        unsigned int len_x3_c_vector = sizeof(x3_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_l_vector[] = {
+                             #include "test/wavelet/data_wavedec/3_l_vector.csv"
+                           };
+        unsigned int len_x3_l_vector = sizeof(x3_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_signal[] = {
+                             #include "test/wavelet/data_wavedec/3_signal.csv"
+                           };
+        unsigned int len_x3_signal = sizeof(x3_signal) / sizeof(NUMTYPE);
+        
+MultiArray signals[] = {
+{ x1_signal, len_x1_signal },
+{ x2_signal, len_x2_signal },
+{ x3_signal, len_x3_signal },
+};
+MultiArray c_vectors[] = {
+{ x1_c_vector, len_x1_c_vector },
+{ x2_c_vector, len_x2_c_vector },
+{ x3_c_vector, len_x3_c_vector },
+};
+MultiArray l_vectors[] = {
+{ x1_l_vector, len_x1_l_vector },
+{ x2_l_vector, len_x2_l_vector },
+{ x3_l_vector, len_x3_l_vector },
+};

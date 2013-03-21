@@ -1,0 +1,116 @@
+
+NUMTYPE x1_c_vector[] = {
+                             #include "test/wavelet/data_wrcoef/1_c_vector.csv"
+                           };
+        unsigned int len_x1_c_vector = sizeof(x1_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x1_l_vector[] = {
+                             #include "test/wavelet/data_wrcoef/1_l_vector.csv"
+                           };
+        unsigned int len_x1_l_vector = sizeof(x1_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x1_result[] = {
+                             #include "test/wavelet/data_wrcoef/1_result.csv"
+                           };
+        unsigned int len_x1_result = sizeof(x1_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_c_vector[] = {
+                             #include "test/wavelet/data_wrcoef/2_c_vector.csv"
+                           };
+        unsigned int len_x2_c_vector = sizeof(x2_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_l_vector[] = {
+                             #include "test/wavelet/data_wrcoef/2_l_vector.csv"
+                           };
+        unsigned int len_x2_l_vector = sizeof(x2_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_result[] = {
+                             #include "test/wavelet/data_wrcoef/2_result.csv"
+                           };
+        unsigned int len_x2_result = sizeof(x2_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_c_vector[] = {
+                             #include "test/wavelet/data_wrcoef/3_c_vector.csv"
+                           };
+        unsigned int len_x3_c_vector = sizeof(x3_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_l_vector[] = {
+                             #include "test/wavelet/data_wrcoef/3_l_vector.csv"
+                           };
+        unsigned int len_x3_l_vector = sizeof(x3_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_result[] = {
+                             #include "test/wavelet/data_wrcoef/3_result.csv"
+                           };
+        unsigned int len_x3_result = sizeof(x3_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x4_c_vector[] = {
+                             #include "test/wavelet/data_wrcoef/4_c_vector.csv"
+                           };
+        unsigned int len_x4_c_vector = sizeof(x4_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x4_l_vector[] = {
+                             #include "test/wavelet/data_wrcoef/4_l_vector.csv"
+                           };
+        unsigned int len_x4_l_vector = sizeof(x4_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x4_result[] = {
+                             #include "test/wavelet/data_wrcoef/4_result.csv"
+                           };
+        unsigned int len_x4_result = sizeof(x4_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x5_c_vector[] = {
+                             #include "test/wavelet/data_wrcoef/5_c_vector.csv"
+                           };
+        unsigned int len_x5_c_vector = sizeof(x5_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x5_l_vector[] = {
+                             #include "test/wavelet/data_wrcoef/5_l_vector.csv"
+                           };
+        unsigned int len_x5_l_vector = sizeof(x5_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x5_result[] = {
+                             #include "test/wavelet/data_wrcoef/5_result.csv"
+                           };
+        unsigned int len_x5_result = sizeof(x5_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x6_c_vector[] = {
+                             #include "test/wavelet/data_wrcoef/6_c_vector.csv"
+                           };
+        unsigned int len_x6_c_vector = sizeof(x6_c_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x6_l_vector[] = {
+                             #include "test/wavelet/data_wrcoef/6_l_vector.csv"
+                           };
+        unsigned int len_x6_l_vector = sizeof(x6_l_vector) / sizeof(NUMTYPE);
+        
+NUMTYPE x6_result[] = {
+                             #include "test/wavelet/data_wrcoef/6_result.csv"
+                           };
+        unsigned int len_x6_result = sizeof(x6_result) / sizeof(NUMTYPE);
+        
+MultiArray results[] = {
+{ x1_result, len_x1_result },
+{ x2_result, len_x2_result },
+{ x3_result, len_x3_result },
+{ x4_result, len_x4_result },
+{ x5_result, len_x5_result },
+{ x6_result, len_x6_result },
+};
+MultiArray c_vectors[] = {
+{ x1_c_vector, len_x1_c_vector },
+{ x2_c_vector, len_x2_c_vector },
+{ x3_c_vector, len_x3_c_vector },
+{ x4_c_vector, len_x4_c_vector },
+{ x5_c_vector, len_x5_c_vector },
+{ x6_c_vector, len_x6_c_vector },
+};
+MultiArray l_vectors[] = {
+{ x1_l_vector, len_x1_l_vector },
+{ x2_l_vector, len_x2_l_vector },
+{ x3_l_vector, len_x3_l_vector },
+{ x4_l_vector, len_x4_l_vector },
+{ x5_l_vector, len_x5_l_vector },
+{ x6_l_vector, len_x6_l_vector },
+};
+ReconType types[] = {RECON_DETAIL, RECON_DETAIL, RECON_DETAIL,                     RECON_APPROX, RECON_APPROX, RECON_APPROX};

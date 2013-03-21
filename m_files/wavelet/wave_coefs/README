@@ -1,0 +1,17 @@
+Files:
+
+==== conv.rb, wavelets_coeffs.h ====
+
+The h file contains the wavelet filter coefficients for various wavelets. It is
+a copy of the file used in the PyWavelets project (http://pybytes.com/pywavelet
+/index.html) which comes with a license reproduced at the head of that file.
+
+The conv.rb file processes the wavelets_coeffs.h file to produce the .m files
+that populate this directory.
+
+==== .m files ====
+
+These are matlab scripts that, when run, will load coefficients for the wavelets
+of the files' namesakes into four variables: Lo_D, Hi_D, Lo_R, Hi_R, each
+corresponding to a low or high pass filter to be used in the deconstruction or
+reconstruction fast discrete wavelet transform.

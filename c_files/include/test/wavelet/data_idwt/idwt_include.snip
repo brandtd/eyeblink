@@ -1,0 +1,61 @@
+
+NUMTYPE x1_coef_a[] = {
+                             #include "test/wavelet/data_idwt/1_coef_a.csv"
+                           };
+        unsigned int len_x1_coef_a = sizeof(x1_coef_a) / sizeof(NUMTYPE);
+        
+NUMTYPE x1_coef_d[] = {
+                             #include "test/wavelet/data_idwt/1_coef_d.csv"
+                           };
+        unsigned int len_x1_coef_d = sizeof(x1_coef_d) / sizeof(NUMTYPE);
+        
+NUMTYPE x1_result[] = {
+                             #include "test/wavelet/data_idwt/1_result.csv"
+                           };
+        unsigned int len_x1_result = sizeof(x1_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_coef_a[] = {
+                             #include "test/wavelet/data_idwt/2_coef_a.csv"
+                           };
+        unsigned int len_x2_coef_a = sizeof(x2_coef_a) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_coef_d[] = {
+                             #include "test/wavelet/data_idwt/2_coef_d.csv"
+                           };
+        unsigned int len_x2_coef_d = sizeof(x2_coef_d) / sizeof(NUMTYPE);
+        
+NUMTYPE x2_result[] = {
+                             #include "test/wavelet/data_idwt/2_result.csv"
+                           };
+        unsigned int len_x2_result = sizeof(x2_result) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_coef_a[] = {
+                             #include "test/wavelet/data_idwt/3_coef_a.csv"
+                           };
+        unsigned int len_x3_coef_a = sizeof(x3_coef_a) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_coef_d[] = {
+                             #include "test/wavelet/data_idwt/3_coef_d.csv"
+                           };
+        unsigned int len_x3_coef_d = sizeof(x3_coef_d) / sizeof(NUMTYPE);
+        
+NUMTYPE x3_result[] = {
+                             #include "test/wavelet/data_idwt/3_result.csv"
+                           };
+        unsigned int len_x3_result = sizeof(x3_result) / sizeof(NUMTYPE);
+        
+MultiArray results[] = {
+{ x1_result, len_x1_result },
+{ x2_result, len_x2_result },
+{ x3_result, len_x3_result },
+};
+MultiArray a_coefs[] = {
+{ x1_coef_a, len_x1_coef_a },
+{ x2_coef_a, len_x2_coef_a },
+{ x3_coef_a, len_x3_coef_a },
+};
+MultiArray d_coefs[] = {
+{ x1_coef_d, len_x1_coef_d },
+{ x2_coef_d, len_x2_coef_d },
+{ x3_coef_d, len_x3_coef_d },
+};
